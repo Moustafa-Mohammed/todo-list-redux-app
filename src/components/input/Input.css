@@ -1,0 +1,12 @@
+.form {
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  background-color: #fce4ec;
+}
+
+::placeholder {
+  color: #d81b60;
+}

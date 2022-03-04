@@ -1,0 +1,8 @@
+.todo-list {
+  background-color: #121212;
+  list-style-type: none;
+  border-radius: 10px;
+  min-width: 320px;
+  max-width: 600px;
+  margin-top: 1rem;
+}

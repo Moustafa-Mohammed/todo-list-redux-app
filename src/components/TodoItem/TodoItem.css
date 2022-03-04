@@ -1,0 +1,11 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.list-item:nth-child(odd) {
+  background-color: #262f37;
+}

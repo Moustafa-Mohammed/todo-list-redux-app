@@ -7,7 +7,7 @@ import { todos } from "../todosData";
 export default function todosReducer(state = todos, action) {
   switch (action.type) {
     case ADD_TODO:
-      return [...state, action.payload];
+      return [action.payload, ...state];
     case REMOVE_TODO:
       return state.filter((todo) => todo.id !== action.id);
     case TOGGLE_TODO:
