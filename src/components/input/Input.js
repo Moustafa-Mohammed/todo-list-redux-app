@@ -26,6 +26,7 @@ function Input() {
       <TextField
         label="Add todo"
         variant="filled"
+        color="secondary"
         className="form-input"
         value={typing}
         onChange={handleChange}
