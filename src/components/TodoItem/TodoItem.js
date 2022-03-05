@@ -1,5 +1,5 @@
 import React from "react";
-import { toggleTodoAction } from "../../actions";
+import { toggleTodoAction, removeTodoAction } from "../../actions";
 import { store } from "../../store";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import Checkbox from "@mui/material/Checkbox";
@@ -8,8 +8,11 @@ import { pink } from "@mui/material/colors";
 import "./TodoItem.css";
 
 function TodoItem({ todo }) {
-  const handleClick = () => {
+  const handleToggleTodo = () => {
     store.dispatch(toggleTodoAction(todo.id));
+  };
+  const handleRemoveTodo = () => {
+    store.dispatch(removeTodoAction(todo.id));
   };
   return (
     <li className="list-item">
@@ -23,10 +26,10 @@ function TodoItem({ todo }) {
             },
           }}
           color="secondary"
-          onClick={handleClick}
+          onClick={handleToggleTodo}
         />
         <span
-          onClick={handleClick}
+          onClick={handleToggleTodo}
           style={{
             textDecoration: todo.complete ? "line-through" : "none",
           }}
@@ -36,6 +39,7 @@ function TodoItem({ todo }) {
       </div>
       <div>
         <DeleteForeverIcon
+          onClick={handleRemoveTodo}
           sx={{
             color: pink[600],
             cursor: "pointer",
