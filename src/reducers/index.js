@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import todos from "./todosReducer";
-import { typing } from "./typingReducer";
+import completedTodos from "./completedTodos";
+import allTodos from "./todosReducer";
+import typing from "./typingReducer";
 
 export const reducer = combineReducers({
-  todos,
+  allTodos,
   typing,
+  completedTodos,
 });

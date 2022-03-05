@@ -4,10 +4,10 @@ import TodoItem from "../TodoItem/TodoItem";
 
 import "./TodoList.css";
 function TodoList() {
-  const { todos } = store.getState();
+  const { allTodos } = store.getState();
   return (
     <ul className="todo-list">
-      {todos.map((todo) => (
+      {allTodos.map((todo) => (
         <TodoItem key={todo.id} todo={todo} />
       ))}
     </ul>

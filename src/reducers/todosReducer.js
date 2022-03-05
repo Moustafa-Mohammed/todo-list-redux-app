@@ -3,8 +3,8 @@ import {
   REMOVE_TODO,
   TOGGLE_TODO,
 } from "../actions/constants/actionTypes";
-import { todos } from "../todosData";
-export default function todosReducer(state = todos, action) {
+import { allTodos } from "../todosData";
+export default function todosReducer(state = allTodos, action) {
   switch (action.type) {
     case ADD_TODO:
       return [action.payload, ...state];
