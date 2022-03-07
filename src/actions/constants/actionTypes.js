@@ -2,4 +2,3 @@ export const ADD_TODO = "ADD_TODO";
 export const REMOVE_TODO = "REMOVE_TODO";
 export const TOGGLE_TODO = "TOGGLE_TODO";
 export const SET_TYPING_VALUE = "SET_TYPING_VALUE";
-export const DISPLAY_COMPLETED_TODOS = "DISPLAY_COMPLETED_TODOS";
