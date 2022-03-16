@@ -3,7 +3,6 @@ import React from "react";
 import { v4 as uuid } from "uuid";
 import { addTodoAction, setTypingAction } from "../../actions";
 import { store } from "../../store";
-import { pink } from "@mui/material/colors";
 
 import "./Input.css";
 
